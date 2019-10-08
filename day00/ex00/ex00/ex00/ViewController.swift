@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ButtonExampleViewController: UIViewController {
+    @IBOutlet weak var btnButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        btnButton.setTitle("Touch Me", for: .normal)
     }
 
 
+    @IBAction func didTapButton(_ sender: Any) {
+    println("You clicked the button")
+    }
 }
 
