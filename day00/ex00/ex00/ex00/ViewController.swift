@@ -20,7 +20,7 @@ class ButtonExampleViewController: UIViewController {
 
 
     @IBAction func didTapButton(_ sender: Any) {
-    println("You clicked the button")
+    print("You clicked the button")
     }
 }
 
