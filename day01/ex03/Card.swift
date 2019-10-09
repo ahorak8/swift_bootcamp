@@ -16,14 +16,14 @@ class Card: NSObject {
 
     override func isEqual(_ object: Any?) -> Bool {
         if let object = object as? Card {
-            return value == object.value
+            return value == object.value && color == object.color
         } else {
             return false
         }
     }
 
     static func ==(lhs: Card, rhs: Card) -> Bool {
-    return lhs.value == rhs.value
+    return lhs.value == rhs.value && lhs.color == rhs.color
 }
     
 }
