@@ -3,7 +3,7 @@ var values : [Value] = Value.allValues
 
 var card1 = Card(c:Color.Heart, v:Value.Ace)
 var card2 = Card(c:Color.Spade, v:Value.Jack)
-var card3 = Card(c:Color.Spade, v:Value.Jack)
+var card3 = Card(c:Color.Heart, v:Value.Jack)
 
 print("Card 1:", card1.description)
 print("Card 2:", card2.description)
