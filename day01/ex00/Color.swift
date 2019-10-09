@@ -1,9 +1,9 @@
-enum  Color: string {
+enum  Color: String {
 
-	case Spades = "black"
-	case Hearts = "red"
-	case Diamonds = "blue"
-	case Clubs = "green"
+	case Spade = "black"
+	case Heart = "red"
+	case Diamond = "blue"
+	case Club = "green"
 
-	static let allColors : [Color] = [Spades, Hearts, Diamonds, Clubs]
+	static let allColors : [Color] = [Spade, Heart, Diamond, Club]
 }
