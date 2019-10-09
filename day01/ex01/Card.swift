@@ -1,11 +1,29 @@
-class Card : NSObject {
+import Foundation
 
-    var color = ""
-    var value = 0
+class Card: NSObject {
 
-    override func desciption() -> Type {
-        return ""
+    var color:Color
+    var value:Value
+
+    override var description: String {
+        return "Colour of \(self.color) with value of \(value)"
     }
 
+    init(c:Color, v:Value) {
+        self.color = c 
+        self.value = v 
+    }
+
+    func isEqual(object: AnyObject?) -> Bool {
+        if let object = object as? Card {
+            return value == object.value
+        } else {
+            return false
+        }
+    }
+
+    static func ==(lhs: Card, rhs: Card) -> Bool {
+    return lhs.value == rhs.value
+}
     
 }
